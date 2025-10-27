@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    {% include nav.html %}
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>© China Legal Tech Watch · Evidence-led · Vendor-neutral.</p>
+  </footer>
+</body>
+</html>
